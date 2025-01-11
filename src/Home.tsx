@@ -1,15 +1,6 @@
 import React from "react";
 
 const Home: React.FC = () =>{
-  /**
-   * Smoothly scroll to a given element ID
-   */
-  const handleScroll = (elementId: string) => {
-    const target = document.getElementById(elementId);
-    if (target) {
-      target.scrollIntoView({ behavior: "smooth" });
-    }
-  };
 
   return (
     <div className="w-full h-full flex flex-col font-sans">
@@ -18,7 +9,6 @@ const Home: React.FC = () =>{
         <ul className="flex space-x-4 mr-4">
           <li>
             <button
-              onClick={() => handleScroll("hero")}
               className="text-gray-600 hover:text-blue-500 transition"
             >
               Home
@@ -26,7 +16,6 @@ const Home: React.FC = () =>{
           </li>
           <li>
             <button
-              onClick={() => handleScroll("experience")}
               className="text-gray-600 hover:text-blue-500 transition"
             >
               Experience
@@ -34,7 +23,6 @@ const Home: React.FC = () =>{
           </li>
           <li>
             <button
-              onClick={() => handleScroll("projects")}
               className="text-gray-600 hover:text-blue-500 transition"
             >
               Projects
@@ -42,7 +30,6 @@ const Home: React.FC = () =>{
           </li>
           <li>
             <button
-              onClick={() => handleScroll("bottom")}
               className="text-gray-600 hover:text-blue-500 transition"
             >
               Contact
@@ -61,7 +48,6 @@ const Home: React.FC = () =>{
           I’m a Software Developer specializing in creating beautiful web experiences.
         </p>
         <button
-          onClick={() => handleScroll("experience")}
           className="mt-4 px-6 py-3 bg-white text-blue-600 rounded-md font-semibold shadow hover:shadow-lg hover:bg-gray-50 transition"
         >
           View My Work
@@ -99,7 +85,6 @@ const Home: React.FC = () =>{
         </div>
 
         <button
-          onClick={() => handleScroll("projects")}
           className="mt-10 px-6 py-3 bg-blue-600 text-white rounded-md font-semibold shadow hover:shadow-lg hover:bg-blue-700 transition"
         >
           Check Out My Projects
@@ -156,7 +141,6 @@ const Home: React.FC = () =>{
         </div>
 
         <button
-          onClick={() => handleScroll("bottom")}
           className="mt-10 px-6 py-3 bg-blue-600 text-white rounded-md font-semibold shadow hover:shadow-lg hover:bg-blue-700 transition"
         >
           Contact Me
